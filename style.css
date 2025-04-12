@@ -1,0 +1,84 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111827; /* Very dark blue/black */
+  color: white;
+  padding: 12px 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #2563eb; /* Bright blue on scroll */
+}
+
+/* Navbar container */
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #facc15; /* Bright yellow on hover */
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 20px 40px;
+  text-align: center;
+  background-color: #e5e7eb;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #111827;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Page content */
+.content {
+  padding: 40px 20px;
+  min-height: 1000px; /* for scroll effect */
+  background-color: white;
+}
